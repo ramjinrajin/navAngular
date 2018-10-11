@@ -1,0 +1,30 @@
+
+<p style="color:green">{{msg}}</p>
+<p style="color:red">{{err}}</p>
+<div class="col-md-4">
+  <div class="form-group">
+    <label for="code">Code</label>
+    <input type="text" required class="form-control" [(ngModel)]="studentModel.code" id="code">
+  </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" required class="form-control" [(ngModel)]="studentModel.name" id="name">
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <input type="text" class="form-control" [(ngModel)]="studentModel.gender"  id="gender">
+  </div>
+  <div class="form-group">
+    <label for="division">Division:</label>
+    <input type="text" class="form-control" [(ngModel)]="studentModel.division" id="division">
+  </div>
+  <div class="form-group">
+    <label for="dob">Date of Birth:</label>
+    <input type="date" class="form-control" [(ngModel)]="studentModel.dateOfBirth" id="dob">
+  </div>
+  <div class="form-group">
+    
+    <input type="button" class="btn btn-primary btn-sm" (click)="CreateStudent()" id="submit" value="Create">
+  </div>
+  
+</div>
